@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Employee</title>
+
+</head>
+<body>
+<hr>
+<form action="http://localhost:5000/saveemp/" method="POST">
+    <label>Emp ID</label>
+    <input type="text" name="empid"><br><br>
+
+    <label>Emp NAME</label>
+    <input type="text" name="empnm"><br><br>
+
+    <label>Emp AGE</label>
+    <input type="text" name="empag"><br><br>
+
+    <label>Emp SALARY</label>
+    <input type="text" name="empsal"><br><br>
+
+    <label>Emp ADDRESS</label>
+    <input type="text" name="empadr"><br><br>
+
+    <label>Emp DESIGNATION</label>
+    <input type="text" name="empdesg"><br><br>
+
+    <input type="submit" value="submit">
+</form>
+
+<table>
+    <thead>
+    <td>EMPID</td>
+    <td>EMPNAME</td>
+    <td>EMPAGE</td>
+    <td>EMPSALARY</td>
+    <td>EMPADDRESS</td>
+    <td>EMPDESIGATION</td>
+    </thead>
+    {% for emp in employees %}
+    <tr>
+        <td>{{emp.empId}}</td>
+        <td>{{emp.empName}}</td>
+        <td>{{emp.empAge}}</td>
+        <td>{{emp.empSalary}}</td>
+        <td>{{emp.empAddress}}</td>
+        <td>{{emp.empDegignation}}</td>
+    </tr>
+    {% endfor %}
+</table>
+</body>
+</html>
