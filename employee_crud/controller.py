@@ -14,7 +14,6 @@ def emp_persist():
     # print(request.form)
     emp = Employee(eid=request.form["empid"],
                    enm=request.form["empnm"],
-                   enm=reu.foreg['dfds'],
                    eag=request.form["empag"],
                    eadr=request.form["empadr"],
                    esal=request.form["empsal"],
