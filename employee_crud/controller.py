@@ -17,7 +17,6 @@ def emp_persist():
                    eag=request.form["empag"],
                    eadr=request.form["empadr"],
                    esal=request.form["empsal"],
-                   esal=request.form["empsal"],
                    edeg=request.form["empdesg"])
     listOfEmps.append(emp)
     print(listOfEmps)
